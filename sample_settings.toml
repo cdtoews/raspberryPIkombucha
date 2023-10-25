@@ -1,0 +1,34 @@
+#need file similar to this named "settings.toml"
+
+#set to what sensor is attached. allowed are "AHT20", "HTU31D", "SHT40"
+SENSORTYPE = "HTU31D"
+
+#must be set to the String "True" to allow watchdog
+ISWATCHDOG = "False"
+
+SSID="MYSSID"
+WIFIPASS="MY_WIFI_PASS"
+
+MQTT_USER="MY_MQTT_USER"
+MQTT_PASS="MY_MQTT_PASS"
+
+MQTT_SERVER="MY_MQTT_SERVER"
+
+MQTT_CLIENT_ID = "kombucha1"
+
+MQTT_HUMIDITY = "/humidity"
+MQTT_TEMP = "/temp"
+MQTT_THERMO_STATUS = "/thermostatus"
+MQTT_HEATER_STATUS = "/heaterstatus"
+MQTT_MEDIUM_PERCENTAGE_STATUS = "/mediumpercentagestatus"
+
+#when I send an update to this, the MQTT server publishes hi/low/percentage
+MQTT_UPDATE_SETTINGS = "/update/thermostat"
+
+MQTT_ONBOARD_LED_FEED = "/onboardled"
+MQTT_HIGHTEMP_FEED = "/feeds/hightemp"
+MQTT_LOWTEMP_FEED = "/feeds/lowtemp"
+MQTT_MEDIUMPERCENTAGE_FEED = "/feeds/mediumpercentage"
+
+
+
